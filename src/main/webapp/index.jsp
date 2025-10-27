@@ -336,14 +336,12 @@ import="java.time.format.DateTimeFormatter" %>
           This application demonstrates automated deployment using Jenkins CI/CD
           pipeline
         </p>
-        <p style="margin-top: 15px; font-size: 0.85em">
+        <p style="margin-top: 15px">
           <strong>Deployment Date:</strong> <%=
           LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd
           HH:mm:ss")) %>
         </p>
-        <p style="font-size: 0.85em">
-          <strong>Session ID:</strong> <%= session.getId() %>
-        </p>
+        <p><strong>Session ID:</strong> <%= session.getId() %></p>
       </div>
     </div>
   </body>
